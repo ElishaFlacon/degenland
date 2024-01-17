@@ -1,0 +1,3 @@
+interface Iinit {
+    id: number;
+}

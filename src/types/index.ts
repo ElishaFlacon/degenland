@@ -1,3 +1,3 @@
-interface Iinit {
+export interface Iinit {
     id: number;
 }

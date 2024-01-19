@@ -23,6 +23,7 @@
     --white: #ffffff;
     --white-10: #fcfcfc;
     --white-20: #dfdfdf;
+    --white-25: #d9d9d9;
     --white-30: #c0c0c0;
 
     --green: #01aa01;
@@ -71,18 +72,18 @@ body {
 
 .wds {
     border-top: 2px solid var(--white);
-    border-right: 2px solid var(--dark);
+    border-right: 2px solid var(--light-gray);
     border-left: 2px solid var(--white);
-    border-bottom: 2px solid var(--dark);
-    box-shadow: 2px 2px 0px var(--white-20) inset;
+    border-bottom: 2px solid var(--light-gray);
+    box-shadow: 2px 2px 0px var(--white-20) inset, 2px 2px 0px var(--dark);
 }
 
 .dws {
     border-top: 2px solid var(--dark);
-    border-right: 2px solid var(--white);
+    border-right: 2px solid var(--white-20);
     border-left: 2px solid var(--dark);
-    border-bottom: 2px solid var(--white);
-    box-shadow: 2px 2px 0px var(--light-gray) inset;
+    border-bottom: 2px solid var(--white-20);
+    box-shadow: 2px 2px 0px var(--light-gray) inset, 2px 2px 0px var(--white);
 }
 
 .text-22-b {

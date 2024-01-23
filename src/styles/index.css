@@ -21,10 +21,13 @@
     --light-gray: #808080;
 
     --white: #ffffff;
+    --white-5: #eeeeee;
     --white-10: #fcfcfc;
+    --white-15: #b8b8b8;
     --white-20: #dfdfdf;
     --white-25: #d9d9d9;
     --white-30: #c0c0c0;
+    --white-50: #757575;
 
     --green: #01aa01;
     --blue: #01a9a9;
@@ -84,6 +87,10 @@ body {
     border-left: 2px solid var(--dark);
     border-bottom: 2px solid var(--white-20);
     box-shadow: 2px 2px 0px var(--light-gray) inset, 2px 2px 0px var(--white);
+}
+
+.lgs {
+    box-shadow: 32px 32px 0px rgba(10, 10, 10, 0.8);
 }
 
 .text-22-b {

@@ -1,17 +1,21 @@
-import React from "react";
-import { Header } from "./modules/Header";
-import { Footer } from "./modules/Footer";
+import React, { Suspense } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { AppRouter } from "./components/AppRouter/AppRouter";
+import { Header } from "./modules/Header/Header";
+import { Footer } from "./modules/Footer/Footer";
 
 export const App: React.FC = () => {
     return (
-        <>
-            <Header />
+        <BrowserRouter>
+            <Suspense>
+                <Header />
 
-            <div className='app'>
-                <div>INIT</div>
-            </div>
+                <div className='app'>
+                    <AppRouter />
+                </div>
 
-            <Footer />
-        </>
+                <Footer />
+            </Suspense>
+        </BrowserRouter>
     );
 };

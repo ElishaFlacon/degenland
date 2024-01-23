@@ -1,0 +1,10 @@
+.link {
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.link::first-letter {
+    color: var(--red);
+}

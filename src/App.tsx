@@ -7,15 +7,13 @@ import { Footer } from "./modules/Footer/Footer";
 export const App: React.FC = () => {
     return (
         <BrowserRouter>
+            <Header />
             <Suspense>
-                <Header />
-
                 <div className='app'>
                     <AppRouter />
                 </div>
-
-                <Footer />
             </Suspense>
+            <Footer />
         </BrowserRouter>
     );
 };

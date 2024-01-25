@@ -1,7 +1,12 @@
 export const AppGuestRoutes = {
-    Home: "/"
+    Home: "/",
+    Rules: "/rules",
+    Roadmap: "/roadmap",
+    Help: "/help",
+    Links: "/links"
 };
 
 export const AppProtectedRoutes = {
-    Profile: "/profile"
+    Mint: "/mint",
+    Code: "/code"
 };

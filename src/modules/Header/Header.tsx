@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
             <HeadBar>
                 <div className='head-headbar-title-block'>
                     <img className='head-headbar-icon' src='/images/favicon.ico' alt='' />
-                    <div className='head-headbar-title'>DEGELAND</div>
+                    <div className='head-headbar-title'>DEGENLAND</div>
                 </div>
                 <div className='head-headbar-buttons'>
                     <Button className='head-headbar-button'>_</Button>

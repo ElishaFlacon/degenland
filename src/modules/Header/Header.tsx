@@ -20,11 +20,11 @@ export const Header: React.FC = () => {
             </HeadBar>
             <div className='head-block'>
                 <nav className='head-link-block'>
-                    <ButtonLink to='/'>Main</ButtonLink>
-                    <ButtonLink to='/'>Rules</ButtonLink>
-                    <ButtonLink to='/'>Roadmap</ButtonLink>
-                    <ButtonLink to='/'>Help</ButtonLink>
-                    <ButtonLink to='/'>Links</ButtonLink>
+                    <ButtonLink to='/home'>Main</ButtonLink>
+                    <ButtonLink to='/rules'>Rules</ButtonLink>
+                    <ButtonLink to='/roadmap'>Roadmap</ButtonLink>
+                    <ButtonLink to='/help'>Help</ButtonLink>
+                    <ButtonLink to='/links'>Links</ButtonLink>
                 </nav>
                 <Button className='head-button'>
                     <div className='head-button-connect'>

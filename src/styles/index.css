@@ -31,6 +31,7 @@
 
     --green: #01aa01;
     --blue: #01a9a9;
+    --light-blue: #02C5C5;
     --red: #912123;
 }
 
@@ -91,6 +92,10 @@ body {
 
 .lgs {
     box-shadow: 32px 32px 0px rgba(10, 10, 10, 0.8);
+}
+
+.xss {
+    box-shadow: 8px 10px 0px rgba(10, 10, 10, 0.8);
 }
 
 .text-22-b {

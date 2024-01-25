@@ -19,6 +19,7 @@
 }
 
 .button:active {
+    background: var(--white-30);
     border-top: 2px solid var(--dark);
     border-right: 2px solid var(--white-20);
     border-left: 2px solid var(--dark);

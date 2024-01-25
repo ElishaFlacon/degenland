@@ -5,12 +5,20 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background: url("../../../public/images/background.png");
+    background: url("../../../public/images/background2.png");
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
 }
 
 .home-title {
     font-size: 96px;
+    line-height: 90px;
     font-weight: 700;
     text-align: center;
     color: var(--light-black);
@@ -23,4 +31,10 @@
     text-align: center;
     color: var(--light-black);
     background: var(--green);
+}
+
+.home-button {
+    display: flex;
+    width: 100% !important;
+    gap: 32px;
 }

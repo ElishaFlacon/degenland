@@ -1,16 +1,16 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import "./codeinput.css";
 
 // https://blog.designly.biz/how-to-create-a-verification-code-input-component-in-react-next-js
 
 interface Props {
+    code: string;
+    setCode: React.Dispatch<React.SetStateAction<string>>;
     reset?: boolean;
     isLoading?: boolean;
 }
 
-export const CodeInput: React.FC<Props> = ({ reset, isLoading }) => {
-    const [code, setCode] = useState([]);
-
+export const CodeInput: React.FC<Props> = ({ code, setCode, reset, isLoading }) => {
     // Refs to control each digit input element
     const inputRefs: any[] = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
 
@@ -20,12 +20,13 @@ export const CodeInput: React.FC<Props> = ({ reset, isLoading }) => {
             ref.current.value = "";
         });
         inputRefs[0].current.focus();
-        setCode([]);
+        setCode("");
     };
 
     // Listen for external reset toggle
     useEffect(() => {
         resetCode();
+        // eslint-disable-next-line
     }, [reset]);
 
     // Handle input
@@ -35,7 +36,7 @@ export const CodeInput: React.FC<Props> = ({ reset, isLoading }) => {
         const nextInput = inputRefs[index + 1];
 
         // Update code state with single digit
-        const newCode: any = [...code];
+        const newCode: any = code.split("");
 
         // Convert lowercase letters to uppercase
         if (/^[a-z]+$/.test(input.value)) {
@@ -94,9 +95,9 @@ export const CodeInput: React.FC<Props> = ({ reset, isLoading }) => {
         <div className='codeinput-container noselect'>
             {[0, 1, 2, 3, 4].map((index) => (
                 <>
-                    <span className='codeinput-slash' />
+                    <span key={`span.${index}`} className='codeinput-slash' />
                     <input
-                        key={index}
+                        key={`input.${index}`}
                         className='codeinput wds'
                         type='text'
                         placeholder='?'

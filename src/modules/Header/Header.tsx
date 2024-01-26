@@ -1,10 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { HeadBar } from "../../components/HeadBar/HeadBar";
 import { Button } from "../../components/Button/Button";
 import { ButtonLink } from "../../components/ButtonLink/ButtonLink";
 import "./header.css";
 
 export const Header: React.FC = () => {
+    const navigate = useNavigate();
+
     return (
         <>
             <HeadBar>
@@ -26,7 +29,7 @@ export const Header: React.FC = () => {
                     <ButtonLink to='/help'>Help</ButtonLink>
                     <ButtonLink to='/links'>Links</ButtonLink>
                 </nav>
-                <Button className='head-button'>
+                <Button className='head-button' onClick={() => navigate("/code")}>
                     <div className='head-button-connect'>
                         <img src='/images/key.png' alt='' />
                         Connect wallet

@@ -1,0 +1,18 @@
+.code-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.code-title {
+    width: 100%;
+    color: var(--gray);
+}
+
+.code-button {
+    display: flex;
+    width: 100% !important;
+    gap: 32px;
+}

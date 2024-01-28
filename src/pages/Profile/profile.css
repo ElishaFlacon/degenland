@@ -6,6 +6,7 @@
     padding-top: 16px;
     padding-bottom: 16px;
     gap: 32px;
+    z-index: 10;
 }
 
 .profile-top-content {

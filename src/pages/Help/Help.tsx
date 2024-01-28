@@ -1,5 +1,7 @@
 import React from "react";
+import { Panel } from "../../components/Panel/Panel";
+import "./help.css";
 
 export const Help: React.FC = () => {
-    return <div>Help</div>;
+    return <Panel className='big-panel'>Help</Panel>;
 };

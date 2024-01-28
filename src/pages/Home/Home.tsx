@@ -6,7 +6,7 @@ import "./home.css";
 
 export const Home: React.FC = () => {
     return (
-        <Panel>
+        <Panel className='big-panel'>
             <div className='home-bg'>
                 <div className='home-content'>
                     <div className='home-title-block'>

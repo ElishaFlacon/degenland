@@ -19,7 +19,7 @@ export const Code: React.FC = () => {
     };
 
     return (
-        <Panel>
+        <Panel className='big-panel'>
             <div className='code-content'>
                 <TextGreen className='code-title'>Enter your invite code</TextGreen>
                 <CodeInput code={code} setCode={setCode} />

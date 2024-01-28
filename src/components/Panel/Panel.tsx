@@ -3,11 +3,12 @@ import "./panel.css";
 
 interface Props {
     children?: ReactNode;
+    className?: string;
 }
 
-export const Panel: React.FC<Props> = ({ children }) => {
+export const Panel: React.FC<Props> = ({ children, className = "" }) => {
     return (
-        <div className='panel lgs'>
+        <div className={`panel lgs ${className}`}>
             <div className='panel-shadow wds'>
                 <div className='panel-paddings'>
                     <div className='panel-border1'>

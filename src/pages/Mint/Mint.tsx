@@ -5,7 +5,7 @@ import "./mint.css";
 
 export const Mint: React.FC = () => {
     return (
-        <Panel>
+        <Panel className='big-panel'>
             <div className='mint-content'>
                 <div className='mint-image-block wds'>
                     <img className='mint-image dws' src='/images/temp.png' alt='' />

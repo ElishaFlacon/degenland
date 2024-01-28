@@ -8,11 +8,11 @@ export const App: React.FC = () => {
     return (
         <BrowserRouter>
             <Header />
-            <Suspense>
-                <div className='app'>
+            <div className='app'>
+                <Suspense>
                     <AppRouter />
-                </div>
-            </Suspense>
+                </Suspense>
+            </div>
             <Footer />
         </BrowserRouter>
     );

@@ -3,7 +3,8 @@ export const AppGuestRoutes = {
     Rules: "/rules",
     Roadmap: "/roadmap",
     Help: "/help",
-    Links: "/links"
+    Links: "/links",
+    Profile: "/profile"
 };
 
 export const AppProtectedRoutes = {

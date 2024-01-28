@@ -39,6 +39,7 @@
     font-size: 26px;
     line-height: 40px;
     color: var(--gray);
+    animation: codeinput-line-anim infinite 1.2s linear;
 }
 
 .codeinput::placeholder {
@@ -50,4 +51,19 @@
 }
 .codeinput::-moz-selection {
     background: transparent;
+}
+
+@keyframes codeinput-line-anim {
+    0% {
+        opacity: 100%;
+    }
+    49.9% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
 }

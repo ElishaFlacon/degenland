@@ -101,3 +101,52 @@
     bottom: -30px;
     right: 50%;
 }
+
+@media screen and (max-width: 1024px) {
+    .footer-img-text-block {
+        width: 100%;
+    }
+    .path-bar {
+        padding: 8px;
+        top: -40px;
+    }
+    .widthpbm {
+        width: 196px;
+    }
+
+    .widthpbv {
+        width: 192px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer-button {
+        height: 28px !important;
+        width: 34px !important;
+    }
+
+    .progress-buttons-block {
+        width: 116px;
+        gap: 4px;
+    }
+    .footer-img-block {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer-img {
+        width: 24px;
+        height: 24px;
+    }
+    .footer-img-text-block {
+        gap: 8px;
+    }
+    .path-bar {
+        display: none;
+        overflow: hidden;
+    }
+    .progress-bar-block {
+        display: none;
+        overflow: hidden;
+    }
+}

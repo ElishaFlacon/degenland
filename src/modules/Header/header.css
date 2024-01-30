@@ -34,6 +34,7 @@
 
 .head-link-block {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -52,4 +53,11 @@
     padding: 0px 16px;
     border: dotted var(--gray);
     gap: 16px;
+}
+
+@media screen and (max-width: 900px) {
+    .head-button {
+        display: none;
+        overflow: hidden;
+    }
 }

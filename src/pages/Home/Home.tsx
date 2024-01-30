@@ -14,7 +14,11 @@ export const Home: React.FC = () => {
                         <TextGreen>Your next country. Real democracy in the web3.</TextGreen>
                     </div>
                     <ButtonBlue className='home-button'>
-                        <img src='/images/internet_connection.png' alt='' />
+                        <img
+                            className='home-button-icon'
+                            src='/images/internet_connection.png'
+                            alt=''
+                        />
                         JOIN US
                     </ButtonBlue>
                 </div>

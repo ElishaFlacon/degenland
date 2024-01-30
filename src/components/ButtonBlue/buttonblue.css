@@ -42,3 +42,11 @@
 .button-blue:disabled:hover {
     background: var(--white-30);
 }
+
+@media screen and (max-width: 900px) {
+    .button-blue {
+        padding: 4px 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

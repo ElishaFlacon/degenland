@@ -125,3 +125,40 @@ body {
     font-weight: 700;
     color: var(--gray);
 }
+
+@media screen and (max-width: 1024px) {
+    .big-panel {
+        min-width: 80%;
+    }
+    .text-22-b {
+        font-size: 20px;
+    }
+    .text-22-n {
+        font-size: 20px;
+    }
+    .text-18-b {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .big-panel {
+        min-height: 70%;
+    }
+    .text-22-b {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    .text-22-n {
+        font-size: 10px;
+        line-height: 13px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .big-panel {
+        min-width: 200px;
+        max-width: 85%;
+    }
+}

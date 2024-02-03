@@ -56,3 +56,9 @@
     line-height: 30px;
     list-style-image: url("../../../public/images/key.png");
 }
+
+@media screen and (max-width: 1024px) {
+    .profile-top-content {
+        flex-direction: column;
+    }
+}

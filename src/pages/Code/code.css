@@ -16,3 +16,15 @@
     width: 100% !important;
     gap: 32px;
 }
+
+@media screen and (max-width: 560px) {
+    .code-title {
+        width: fit-content;
+        padding: 8px 16px;
+    }
+
+    .code-button {
+        width: fit-content !important;
+        padding: 4px 48px;
+    }
+}

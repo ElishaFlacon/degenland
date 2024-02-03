@@ -37,11 +37,12 @@
     height: 100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
     .panel-paddings {
         padding: 8px 4px;
         height: calc(100% - 8px * 2);
     }
+    
     .panel-border1 {
         padding: 2px 4px;
         border-width: 1px 3px;

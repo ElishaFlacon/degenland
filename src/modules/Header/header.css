@@ -19,7 +19,9 @@
 }
 
 .head-headbar-button {
-    padding: 0px !important;
+    display: flex;
+    align-items: flex-end;
+    padding: 4px !important;
     height: 28px !important;
     width: 32px !important;
 }
@@ -55,9 +57,29 @@
     gap: 16px;
 }
 
-@media screen and (max-width: 900px) {
+.head-headbar-buttons-mobile {
+    display: none;
+    overflow: hidden;
+}
+
+.home-key-image {
+    width: 16px;
+    height: 16px;
+}
+
+@media screen and (max-width: 1024px) {
     .head-button {
         display: none;
         overflow: hidden;
+    }
+
+    .head-headbar-buttons {
+        display: none;
+        overflow: hidden;
+    }
+
+    .head-headbar-buttons-mobile {
+        display: block;
+        overflow: visible;
     }
 }

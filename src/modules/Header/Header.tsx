@@ -1,13 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { HeadBar } from "../../components/HeadBar/HeadBar";
 import { Button } from "../../components/Button/Button";
 import { ButtonLink } from "../../components/ButtonLink/ButtonLink";
+import { Hide } from "../../icons/Hide";
+import { Show } from "../../icons/Show";
+import { Close } from "../../icons/Close";
 import "./header.css";
 
 export const Header: React.FC = () => {
-    const navigate = useNavigate();
-
     return (
         <>
             <HeadBar>
@@ -16,9 +16,23 @@ export const Header: React.FC = () => {
                     <div className='head-headbar-title'>DEGENLAND</div>
                 </div>
                 <div className='head-headbar-buttons'>
-                    <Button className='head-headbar-button'>_</Button>
-                    <Button className='head-headbar-button'>=</Button>
-                    <Button className='head-headbar-button'>+</Button>
+                    <Button className='head-headbar-button'>
+                        <Hide />
+                    </Button>
+                    <Button className='head-headbar-button'>
+                        <Show />
+                    </Button>
+                    <Button className='head-headbar-button'>
+                        <Close />
+                    </Button>
+                </div>
+                <div className='head-headbar-buttons-mobile'>
+                    <Button
+                        className='head-headbar-button'
+                        onClick={() => console.log("connect wallet")}
+                    >
+                        <img className='home-key-image' src='/images/key.png' alt='' />
+                    </Button>
                 </div>
             </HeadBar>
             <div className='head-block'>
@@ -29,7 +43,7 @@ export const Header: React.FC = () => {
                     <ButtonLink to='/help'>Help</ButtonLink>
                     <ButtonLink to='/links'>Links</ButtonLink>
                 </nav>
-                <Button className='head-button' onClick={() => navigate("/code")}>
+                <Button className='head-button' onClick={() => console.log("connect wallet")}>
                     <div className='head-button-connect'>
                         <img src='/images/key.png' alt='' />
                         Connect wallet

@@ -67,3 +67,24 @@
         opacity: 0%;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .codeinput-container {
+        display: flex;
+        gap: 8px;
+    }
+
+    .codeinput {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .codeinput:focus + .codeinput-slash::after {
+        right: 16px;
+        top: 6px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}

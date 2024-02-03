@@ -102,14 +102,12 @@
     right: 50%;
 }
 
-@media screen and (max-width: 1024px) {
-    .footer-img-text-block {
-        width: 100%;
-    }
+@media screen and (max-width: 1240px) {
     .path-bar {
         padding: 8px;
         top: -40px;
     }
+
     .widthpbm {
         width: 196px;
     }
@@ -119,7 +117,11 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
+    .footer-img-text-block {
+        width: 100%;
+    }
+
     .footer-button {
         height: 28px !important;
         width: 34px !important;
@@ -138,13 +140,16 @@
         width: 24px;
         height: 24px;
     }
+
     .footer-img-text-block {
         gap: 8px;
     }
+
     .path-bar {
         display: none;
         overflow: hidden;
     }
+
     .progress-bar-block {
         display: none;
         overflow: hidden;
